@@ -14,11 +14,11 @@ export default function Header() {
 
   return (
     <header className="header" style={{ 
-      background: 'radial-gradient(circle at 50% -20px, rgba(0, 240, 255, 0.15), transparent 400px), radial-gradient(circle at 0% 50%, rgba(176, 38, 255, 0.1), transparent 300px), linear-gradient(90deg, rgba(8,8,12,0.95), rgba(15,15,22,0.98), rgba(8,8,12,0.95))',
-      backdropFilter: 'blur(20px)',
-      WebkitBackdropFilter: 'blur(20px)',
-      borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-      boxShadow: '0 4px 30px rgba(0, 0, 0, 0.8), inset 0 -1px 0 rgba(0, 240, 255, 0.2)'
+      background: 'rgba(10, 10, 15, 0.85)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)'
     }}>
       <div className="container header-inner">
         <Link to="/" className="logo">
