@@ -7,10 +7,10 @@ export default function Products() {
   }, []);
 
   return (
-    <div className="products-page animate-fade-in" style={{ padding: '60px 0' }}>
+    <div className="products-page animate-fade-in mobile-padding-y" style={{ padding: '60px 0' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-          <h1 style={{ fontSize: '3.5rem', marginBottom: '20px' }} className="text-gradient">Our Ecosystem</h1>
+          <h1 style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', marginBottom: '20px' }} className="text-gradient">Our Ecosystem</h1>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
             Discover our flagship innovations designed to revolutionize the way you interact with the digital world.
           </p>
@@ -18,7 +18,7 @@ export default function Products() {
 
         {/* Hero Product Card */}
         <div className="glass-panel" style={{ 
-          padding: '60px', 
+          padding: 'clamp(28px, 5vw, 60px)', 
           display: 'flex', 
           alignItems: 'center', 
           justifyContent: 'space-between',
@@ -27,17 +27,17 @@ export default function Products() {
           background: 'linear-gradient(to right, rgba(20,20,30,0.8), rgba(0,240,255,0.1))',
           marginBottom: '60px'
         }}>
-          <div style={{ flex: '1 1 400px' }}>
+          <div style={{ flex: '1 1 280px', minWidth: 0 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(176,38,255,0.2)', borderRadius: '20px', color: 'var(--accent-purple)', fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '24px' }}>
               <Sparkles size={16} /> LIVE NOW
             </div>
-            <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Aszetingo.com</h2>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '20px' }}>Aszetingo.com</h2>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: 1.8 }}>
               Aszetingo is a powerful web platform designed to provide clear, real-time insights into cryptocurrency markets. Built with a focus on accuracy, speed, and user-friendly design, it helps traders, analysts, and enthusiasts access data without clutter. From price tracking and analytics to risk management insights, Aszetingo delivers a clean, junk-free interface that makes complex crypto information simple and actionable.
             </p>
             <a href="https://www.aszetingo.com" target="_blank" rel="noopener noreferrer" className="btn-primary">Visit Aszetingo</a>
           </div>
-          <div style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ flex: '1 1 220px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
             <img 
               src="/assets/aszetingo_logo.png" 
               alt="Aszetingo Logo" 

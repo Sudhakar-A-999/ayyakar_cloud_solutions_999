@@ -334,7 +334,7 @@ export default function Home() {
             To create extraordinary, automated cloud solutions that simplify and elevate everyday life and work by delivering clean, high quality, junk free digital experiences. We aim to build futuristic cloud infrastructure that powers analytics, risk management, education, journaling, and beyond, enabling seamless automation across industries and daily assets.
           </p>
 
-          <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="responsive-flex">
             {['India-First Innovation', 'Global-Scale Infrastructure', 'Human-Centered Tech'].map((tag, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <div style={{
@@ -351,7 +351,7 @@ export default function Home() {
 
       {/* Problems & Solutions Section - 3D Printed Bright Beach Theme */}
       {/* Problems & Solutions Section - Curvy Futuristic Light Theme */}
-      <section className="solutions" style={{ padding: '100px 0', background: 'linear-gradient(160deg, #07090f 0%, #0b0f1e 40%, #0d1225 70%, #080c18 100%)', overflow: 'hidden', position: 'relative', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <section className="solutions mobile-padding-y" style={{ padding: '100px 0', background: 'linear-gradient(160deg, #07090f 0%, #0b0f1e 40%, #0d1225 70%, #080c18 100%)', overflow: 'hidden', position: 'relative', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         {/* Dark Background Blobs */}
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: '450px', height: '450px', background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(80px)', opacity: 1, zIndex: 0 }} />
         <div style={{ position: 'absolute', bottom: '-10%', right: '-5%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(14,165,233,0.14) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(100px)', opacity: 1, zIndex: 0 }} />
@@ -363,14 +363,14 @@ export default function Home() {
             <div style={{ width: '60px', height: '6px', background: 'linear-gradient(90deg, #38BDF8, #818CF8)', margin: '0 auto', borderRadius: '10px' }} />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginBottom: '20px', padding: '0 20px' }}>
+          <div className="responsive-grid-2" style={{ marginBottom: '20px', padding: '0 20px' }}>
             <h3 style={{ fontSize: '1.8rem', color: '#FB7185', textAlign: 'center', fontWeight: '700', textShadow: '0 4px 20px rgba(244, 63, 94, 0.4)' }}>The Problem</h3>
             <h3 style={{ fontSize: '1.8rem', color: '#38BDF8', textAlign: 'center', fontWeight: '700', textShadow: '0 4px 20px rgba(14, 165, 233, 0.4)' }}>Ayyakar Cloud Solution</h3>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
             {/* Row 1 - Analytics */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+            <div className="responsive-grid-2">
               <div style={{ 
                 padding: '40px', transition: 'all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)', 
                 border: '1px solid rgba(251, 113, 133, 0.2)', borderRadius: '40px 10px 40px 10px',
@@ -413,7 +413,7 @@ export default function Home() {
             </div>
 
             {/* Row 2 - Knowledge Management */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+            <div className="responsive-grid-2">
               <div style={{ 
                 padding: '40px', transition: 'all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)', 
                 border: '1px solid rgba(232, 121, 249, 0.2)', borderRadius: '10px 40px 10px 40px',
@@ -456,7 +456,7 @@ export default function Home() {
             </div>
 
             {/* Row 3 - Education / Learning */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+            <div className="responsive-grid-2">
               <div style={{ 
                 padding: '40px', transition: 'all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)', 
                 border: '1px solid rgba(148, 163, 184, 0.15)', borderRadius: '40px 10px 40px 10px',
@@ -499,7 +499,7 @@ export default function Home() {
             </div>
 
             {/* Row 4 - Risk Management */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+            <div className="responsive-grid-2">
               <div style={{ 
                 padding: '40px', transition: 'all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)', 
                 border: '1px solid rgba(252, 211, 77, 0.2)', borderRadius: '10px 40px 10px 40px',
@@ -545,7 +545,7 @@ export default function Home() {
       </section>
 
       {/* ── TECH DNA ── */}
-      <section style={{ padding: '100px 0', position: 'relative', overflow: 'hidden', background: 'linear-gradient(160deg, #0b0f1e 0%, #0d1225 40%, #080c18 70%, #0b0f1e 100%)', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <section className="mobile-padding-y" style={{ padding: '100px 0', position: 'relative', overflow: 'hidden', background: 'linear-gradient(160deg, #0b0f1e 0%, #0d1225 40%, #080c18 70%, #0b0f1e 100%)', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         {/* Background blobs */}
         <div style={{ position: 'absolute', top: '-5%', right: '-5%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(99,102,241,0.14) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(80px)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: '-5%', left: '-5%', width: '450px', height: '450px', background: 'radial-gradient(circle, rgba(0,240,255,0.10) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(80px)', pointerEvents: 'none' }} />
@@ -576,7 +576,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+          <div className="responsive-grid-3">
             {[
               {
                 icon: '🤖', title: 'AI-Native Architecture',

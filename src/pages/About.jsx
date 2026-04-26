@@ -19,7 +19,7 @@ import {
 
 export default function About() {
   return (
-    <div className="about-page animate-fade-in" style={{ padding: '60px 0' }}>
+    <div className="about-page animate-fade-in mobile-padding-y" style={{ padding: '60px 0' }}>
       <div className="container" style={{ maxWidth: '1200px' }}>
         
         {/* Header Section */}
@@ -31,7 +31,7 @@ export default function About() {
         </div>
 
         {/* Who We Are & What We Do */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px', marginBottom: '60px' }}>
+        <div className="responsive-grid-auto" style={{ marginBottom: '60px' }}>
           <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Users style={{ color: 'var(--accent-cyan)', marginBottom: '20px' }} size={40} />
             <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>
@@ -68,7 +68,7 @@ export default function About() {
              <Target size={40} style={{ color: 'var(--accent-purple)', marginBottom: '20px' }} />
              <h2 style={{ fontSize: '2.5rem' }}>Mission</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+          <div className="responsive-grid-auto">
             {[
               { title: 'Simplify Complexity', desc: 'Provide software, websites, and cloud platforms that solve digital challenges with clarity and ease.', icon: <Settings size={24} style={{ color: 'var(--accent-cyan)' }} /> },
               { title: 'Automate Daily Assets', desc: 'Build intelligent, real time systems for home, travel, work, communication, and trading sectors.', icon: <Zap size={24} style={{ color: '#FFD700' }} /> },
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* Why Choose Us & Quality */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px', marginBottom: '60px' }}>
+        <div className="responsive-grid-auto" style={{ marginBottom: '60px' }}>
           <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Award style={{ color: '#FFD700', marginBottom: '20px' }} size={40} />
             <h2 style={{ fontSize: '2rem', marginBottom: '30px' }}>
@@ -120,7 +120,7 @@ export default function About() {
         </div>
 
         {/* Journey & Future Focus */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px', marginBottom: '60px' }}>
+        <div className="responsive-grid-auto" style={{ marginBottom: '60px' }}>
           <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <TrendingUp style={{ color: 'var(--accent-purple)', marginBottom: '20px' }} size={40} />
             <h2 style={{ fontSize: '1.8rem', marginBottom: '20px' }}>Our Journey</h2>

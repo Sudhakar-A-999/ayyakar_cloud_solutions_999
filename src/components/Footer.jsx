@@ -6,11 +6,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-col">
-          <Link to="/" className="logo" style={{ marginBottom: '20px', display: 'flex' }}>
+          <Link to="/" className="logo" style={{ marginBottom: '20px' }}>
             <img src="/assets/logo.png" alt="Ayyakar Cloud Solutions Logo" style={{ flexShrink: 0 }} />
             <span><span style={{ color: '#FFD700' }}>Ayyakar</span> <span style={{ color: '#FFFFFF' }}>Cloud Solutions</span></span>
           </Link>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '20px', maxWidth: '300px' }}>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '20px', maxWidth: '300px', margin: '0 auto 20px' }}>
             Engineering Intelligent Systems
           </p>
           <div className="social-links">
