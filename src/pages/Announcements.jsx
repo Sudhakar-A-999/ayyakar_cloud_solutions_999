@@ -316,7 +316,7 @@ export default function Announcements() {
               paddingTop: '32px',
               marginTop: '40px'
             }}>
-              Join us as we unveil Aszetingo on <strong style={{ color: '#ffc107' }}>23‑05‑2026</strong>. Together, let's <strong style={{ color: '#6b4fcf' }}>shape the future of cloud innovation</strong>.
+              Join us as we unveil Aszetingo on <strong style={{ color: '#ffc107' }}>06-06-2026</strong>. Together, let's <strong style={{ color: '#6b4fcf' }}>shape the future of cloud innovation</strong>.
             </p>
           </div>
         </div>
@@ -350,7 +350,7 @@ export default function Announcements() {
             WebkitTextFillColor: 'transparent',
             margin: 0
           }}>
-            23 May 2026
+            06 June 2026
           </p>
         </div>
       </div>
